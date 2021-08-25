@@ -144,7 +144,6 @@ class Client implements ClientInterface
      */
     public function post(RouteInterface $route, $data, $headers = [])
     {
-        dd($this->buildRequest($route, Http::POST, [], $data, $headers));
         return $this->buildRequest($route, Http::POST, [], $data, $headers)
                     ->send();
     }

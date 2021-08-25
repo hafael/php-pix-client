@@ -206,9 +206,9 @@ class Payload implements PayloadInterface
     /**
      * Define o pagador
      * 
-     * @param Devedor $payer
+     * @param Pagador $payer
      */
-    public function setPayer(Devedor $payer)
+    public function setPayer(Pagador $payer)
     {
         $this->payer = $payer;
         return $this;

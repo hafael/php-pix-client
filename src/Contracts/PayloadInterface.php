@@ -5,6 +5,7 @@ namespace Hafael\Pix\Client\Contracts;
 use Hafael\Pix\Client\Amount;
 use Hafael\Pix\Client\Devedor;
 use Hafael\Pix\Client\Merchant;
+use Hafael\Pix\Client\Pagador;
 
 interface PayloadInterface
 {
@@ -95,9 +96,9 @@ interface PayloadInterface
     /**
      * Define o pagador
      * 
-     * @param Devedor $payer
+     * @param Pagador $payer
      */
-    public function setPayer(Devedor $payer);
+    public function setPayer(Pagador $payer);
 
     /**
      * Retorna o devedor da cobrança
