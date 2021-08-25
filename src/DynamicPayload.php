@@ -186,9 +186,9 @@ class DynamicPayload extends Payload
     /**
      * Define o pagador
      * 
-     * @param Devedor $payer
+     * @param mixed $payer
      */
-    public function setPayer(Devedor $payer)
+    public function setPayer($payer)
     {
         $this->payer = $payer;
         return $this;

@@ -206,9 +206,9 @@ class Payload implements PayloadInterface
     /**
      * Define o pagador
      * 
-     * @param Pagador $payer
+     * @param mixed $payer
      */
-    public function setPayer(Pagador $payer)
+    public function setPayer($payer)
     {
         $this->payer = $payer;
         return $this;
@@ -217,7 +217,7 @@ class Payload implements PayloadInterface
     /**
      * Retorna o devedor da cobrança
      * 
-     * @return Devedor;
+     * @return mixed;
      */
     public function getPayer()
     {

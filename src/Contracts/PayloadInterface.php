@@ -96,14 +96,14 @@ interface PayloadInterface
     /**
      * Define o pagador
      * 
-     * @param Pagador $payer
+     * @param mixed $payer
      */
-    public function setPayer(Pagador $payer);
+    public function setPayer($payer);
 
     /**
-     * Retorna o devedor da cobrança
+     * Retorna o pagador da cobrança
      * 
-     * @return Devedor;
+     * @return mixed;
      */
     public function getPayer();
 

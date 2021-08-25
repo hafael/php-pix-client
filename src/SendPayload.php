@@ -67,7 +67,7 @@ class SendPayload extends Payload
      * 
      * @param Pagador $payer
      */
-    public function setPayer(Pagador $payer)
+    public function setPayer($payer)
     {
         $this->payer = $payer;
         return $this;

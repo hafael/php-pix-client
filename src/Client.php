@@ -6,6 +6,7 @@ use Hafael\Pix\Client\Api\OAuth;
 use Hafael\Pix\Client\Handler\Curl;
 use Hafael\Pix\Client\Handler\Http;
 use Hafael\Pix\Client\Api\Pix;
+use Hafael\Pix\Client\Api\Settings;
 use Hafael\Pix\Client\Api\Webhook;
 use Hafael\Pix\Client\Contracts\RouteInterface;
 use Hafael\Pix\Client\Contracts\ClientInterface;
@@ -27,6 +28,7 @@ class Client implements ClientInterface
         'cob' => Cob::class,
         'pix' => Pix::class,
         'webhook' => Webhook::class,
+        'settings' => Settings::class,
     ];
 
     /**
