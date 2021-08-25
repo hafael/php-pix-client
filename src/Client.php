@@ -66,7 +66,7 @@ class Client implements ClientInterface
      * @param $pixEndpoint
      * @param $baseUrl
      */
-    public function __construct($clientId, $clientSecret, $certificate, $certificatePassword, $baseUrl = self::ENDPOINT)
+    public function __construct($clientId = null, $clientSecret = null, $certificate = null, $certificatePassword = null, $baseUrl = self::ENDPOINT)
     {
         $this->clientId = $clientId;
         $this->clientSecret = $clientSecret;
